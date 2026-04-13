@@ -1,0 +1,20 @@
+# Maven build output
+target/
+
+# IDE files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+*.eclipse
+
+# VS Code
+.vscode/
+
+# Kafka Streams local state stores
+/tmp/kafka-streams/
+
+# OS artefacts
+.DS_Store
+Thumbs.db
