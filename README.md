@@ -100,7 +100,7 @@ The simplest way to get a single-node Kafka broker running is with Docker:
 docker run -d \
   --name kafka \
   -p 9092:9092 \
-  apache/kafka:3.7.0
+  apache/kafka:3.9.2
 ```
 
 Verify it is up:

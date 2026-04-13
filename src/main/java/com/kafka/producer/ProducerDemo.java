@@ -28,7 +28,7 @@ import java.util.concurrent.Future;
  * <p>Prerequisites: a running Kafka broker at {@code localhost:9092} and a topic
  * named {@value #TOPIC}.  Start one quickly with Docker:
  * <pre>
- *   docker run -d -p 9092:9092 apache/kafka:3.7.0
+ *   docker run -d -p 9092:9092 apache/kafka:3.9.2
  * </pre>
  */
 public class ProducerDemo {
