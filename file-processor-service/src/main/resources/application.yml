@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: file-processor-service
+
+  datasource:
+    url: jdbc:h2:mem:fileprocessordb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.H2Dialect
+
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: false  # Disable auto-start on startup
+
+server:
+  port: 8081
+
+file:
+  input:
+    path: /Users/mannan/Desktop/SpringBoot/Java-Kafka/input/transactions.txt
+
+logging:
+  level:
+    com.example.kafka: DEBUG
+    org.springframework.batch: INFO
+
